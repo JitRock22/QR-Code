@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="./assets/images.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>QR Code Generator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h2>Generate Your QR Code</h2>
+        <p>Paste Your url or enter the text</p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Enter text or url" class="content" />
+        <button class="btn">Generate QR Code</button>
+      </div>
+
+      <div id="err">
+        <img src="./assets/error.png" alt="error" class="err" />
+        <h4>Please enter a url or Text</h4>
+      </div>
+      <div id="qr">
+          <img src="" alt="Your QR Code" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
